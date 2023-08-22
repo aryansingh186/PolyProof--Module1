@@ -33,3 +33,59 @@ Utilize polyscan.com to monitor your account and track the arrival of the tokens
 
 10. Get Balance on Polygon:
 Replace the tokenAddress variable in the getBalance.js script with the obtained Polygon contract address. Run npx hardhat run scripts/getBalance.js --network mumbai to view your new Polygon balance.
+
+
+# MyCollectibles NFT Collection
+
+Welcome to the MyCollectibles NFT Collection project! This repository contains a smart contract and scripts for creating and managing ERC721A tokens based on the MyCollectibles collection. This ReadMe provides an overview of the project's components, features, and execution steps.
+
+## Project Overview
+
+The MyCollectibles NFT Collection project focuses on creating and managing a collection of unique Non-Fungible Tokens (NFTs) using the ERC721A standard. The smart contract `MyCollectibles` extends the ERC721A contract and provides functionality for minting NFTs, transferring them, and querying balances.
+
+## Smart Contract Details
+
+- **Contract:** The `MyCollectibles` contract is deployed and extends the ERC721A contract, serving as the blueprint for the NFT collection.
+- **Max Quantity:** The contract limits the total number of tokens that can be created to 5.
+- **Base URL:** The base URL for NFT metadata is set to an IPFS gateway.
+- **Prompt Description:** A prompt description is provided for users interacting with the NFT collection.
+- **Constructor:** The contract is initialized with a name, symbol, and owner address.
+- **Minting:** The contract owner can mint up to 5 NFTs at once.
+- **Base URI Override:** The base URI for NFTs is overridden to provide metadata URLs.
+- **Prompt Description Function:** Provides access to the stored prompt description.
+
+## Getting Started
+
+Before you begin, ensure you have the required tools and knowledge. Follow the steps outlined in the "Prerequisites" and "Execution" sections to successfully set up and execute the project.
+
+### Prerequisites
+
+- Setup image generation tools (DALLE 2, Midjourney, or Lexica).
+- Obtain an IPFS account for securely storing NFT images.
+- Familiarize yourself with Ethereum and Polygon networks.
+- Install the Hardhat framework for contract deployment and testing.
+
+### Execution Steps
+
+1. **Generate Images:** Utilize AI models to create a collection of 5 unique NFT images.
+2. **IPFS Storage:** Upload the generated NFT images to IPFS for secure storage.
+3. **Deploy Contract:** Deploy the `MyCollectibles` contract on the Ethereum network.
+4. **Implement Function:** Enhance the contract by implementing the `getPromptDescription` function.
+5. **Mint NFTs:** Write a script to batch mint 5 NFTs to the contract.
+6. **Approve Transfer:** Prepare NFTs for transfer to the Polygon network.
+7. **Deposit to FxChain:** Deposit NFTs to the Ethereum FxChain network.
+8. **Check Balance:** Verify the NFT wallet balance on the FxChain network.
+
+## Script Details
+
+- **Batch Mint ERC721A Tokens:** Mint 5 ERC721A tokens on the Ethereum network.
+- **Transfer ERC721A Tokens to Ethereum FxChain Network:** Transfer tokens to Ethereum FxChain.
+- **ERC721A Token Balance Checker:** Check token balance of a wallet address.
+
+## Video Explanation
+
+For a visual walkthrough of the project, watch the [video explanation](https://www.loom.com/share/cc04d5669e45456b9e92ea1e5290f898?sid=6f525785-29fa-4720-9b01-43e1eadca01a).
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
